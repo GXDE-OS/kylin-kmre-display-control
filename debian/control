@@ -8,7 +8,7 @@ Homepage: http://www.kylinos.cn
 
 Package: kylin-kmre-display-control
 Section: libs
-Architecture: amd64 arm64
+Architecture: any
 Conflicts: kydroid2, kydroid2-app-data, kydroid2-daemon, kydroid2-filewatcher, kydroid2-fuse, kydroid2-image-data, display-control-host
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: display control libraries for AppStream.
