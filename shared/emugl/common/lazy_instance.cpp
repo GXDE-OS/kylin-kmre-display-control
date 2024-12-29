@@ -34,12 +34,12 @@ static inline void compilerBarrier() {
 #error "Your compiler is not supported"
 #endif
 
-#if defined(__i386__) || defined(__x86_64__) || defined(__arm__) || defined(__aarch64__)
+//#if defined(__i386__) || defined(__x86_64__) || defined(__arm__) || defined(__aarch64__)
 #  define acquireBarrier() compilerBarrier()
 #  define releaseBarrier() compilerBarrier()
-#else
+/*#else
 #  error "Your CPU is not supported"
-#endif
+#endif*/
 
 static inline AtomicType loadAcquire(AtomicType volatile* ptr) {
     AtomicType ret = *ptr;
