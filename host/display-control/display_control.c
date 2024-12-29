@@ -31,6 +31,7 @@
 
 #define DISPLAY_CONTROL_LIB_NAME  "libDisplayControl"
 
+#include "utils/debug.h"
 
 // Define the DisplayControl API function pointers.
 #define FUNCTION_(ret, name, sig, params) \
