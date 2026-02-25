@@ -1,6 +1,6 @@
 # Don't treat any warnings as error as we take the source directly from
 # upstream and just compile it.
-cmake_minimum_required(VERSION 2.8.2)
+cmake_minimum_required(VERSION 3.10)
 
 set(CMAKE_C_FLAGS "-Wall -DIOSTREAM_NAMESPACE='\"kmre::DisplayControl::\"'")
 set(CMAKE_CXX_FLAGS "-std=c++11 -Wall -DIOSTREAM_NAMESPACE='\"kmre::DisplayControl::\"'")
